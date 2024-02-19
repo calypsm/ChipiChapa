@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap');
+
+*{
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.content{
+    height: 100vh;
+    width: auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(24, 36, 62);
+    height: 130px;
+    padding: 25px;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    gap: 15px;
+}
+
+.title{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.title1{
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.nav-right
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+p{
+    margin: 0px;
+}
+
+.img{
+    width: 100%;
+}
+
+.logo{
+    width: 65px;
+    height: 55px;
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} 
+
+main{
+    background: url('./../pictures/bg.png');
+    height: 680px;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+    gap: 35px;
+}
+
+h1{
+    color: aliceblue;
+    font-size: 34px;
+    font-weight: 900;
+    text-shadow: 2px 2px 6px rgb(43, 62, 129);
+}
+
+.text{
+    color: rgb(14, 44, 71);
+    font-size: 18px;
+    font-weight: 900;
+    text-shadow: 1.75px 1.75px 2px rgb(206, 229, 251);
+    padding: 10px 25px;
+}
+
+td{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.edit{
+    color: rgb(185, 45, 45);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer{
+    height: 250px;
+    background-color: rgb(8, 22, 74) ;
+    padding: 50px 60px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left{    
+    color: aliceblue;
+    display: flex;
+    align-items: start;
+    gap: 15px;
+}
+
+.title-bwh{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.title1-bwh{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.logo-bwh{
+    width: 65px;
+    height: 55px;
+}
+
+.footer-right{
+    color: aliceblue;
+}
+
+.quick{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0px;
+    gap: 20px;
+}
+
+.ql{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.table_body{
+    width: 80%;
+    max-height: calc(89% - 1.6rem);
+    background-color: rgb(255, 255, 255);
+
+    margin: .8rem auto;
+    border-radius: 15px;
+
+    overflow: auto;
+}
+
+.table_body::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table_body::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table_body:hover::-webkit-scrollbar-thumb{ 
+    visibility: visible;
+}
+
+table{
+    width: 100%;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    border-inline-start: 2px solid rgb(186, 212, 250);
+    padding: 10px;
+    text-align: center;
+}
+
+thead{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(186, 212, 250);
+}
+
+tbody tr:nth-child(even){
+    background-color: #00000010;
+}
+
+tbody tr:hover{
+    background-color: rgba(255, 230, 0, 0.3);
+}
+
+@media(max-width: 1000px){
+    td:not(:first-of-type){
+        min-width: 12rem;
+    }
+}
+
+input{
+    padding: 10px;
+    border-radius: 12px;
+    background-color: rgb(247, 130, 130);
+    font-weight: 600;
+    border: none;
+}
